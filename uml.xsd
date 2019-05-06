@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema 
+	targetNamespace="http://xtl/uml" 
+	xmlns="http://xtl/uml"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:mm="http://xtl/mm" 
+	xmlns:xmi="http://xtl/xmi">
+	<xs:import namespace="http://xtl/mm" schemaLocation="mm.xsd"/>
+	<xs:import namespace="http://xtl/xmi" schemaLocation="xmi.xsd"/>
+	<xs:element name="Model">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="mm:ownedMember" minOccurs="0" maxOccurs="unbounded">
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

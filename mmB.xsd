@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema 
+	targetNamespace="http://xtl/mmB" 
+	xmlns="http://xtl/mmB"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xmi="http://xtl/xmi">
+	<xs:import namespace="http://xtl/xmi" schemaLocation="xmi.xsd"/>
+	<xs:element name="table">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="row" minOccurs="0" maxOccurs="unbounded">
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="meta_model_B">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="table" minOccurs="0" maxOccurs="unbounded">
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="row">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="key" minOccurs="0" maxOccurs="unbounded">
+						</xs:element>
+						<xs:element ref="foreign" minOccurs="0" maxOccurs="unbounded">
+						</xs:element>
+						<xs:element ref="column" minOccurs="0" maxOccurs="unbounded">
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="foreign">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="type" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="column">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="type" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="key">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="type" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

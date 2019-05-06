@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns="http://xtl/mm" xmlns:xmi="http://xtl/xmi" xmlns:uml="http://xtl/uml" xmi:version="2.1">
+  <uml:Model name="mt" xmi:id="M3N6O_iGCkzsbgOb">
+    <ownedMember name="table" xmi:id="uml_table" xmi:type="uml:Stereotype"/>
+    <ownedMember name="row" xmi:id="uml_row" xmi:type="uml:Stereotype"/>
+    <ownedMember name="column" xmi:id="uml_column" xmi:type="uml:Stereotype"/>
+    <ownedMember name="String" visibility="public" xmi:id="String_id" xmi:type="uml:DataType"/>
+    <ownedMember name="int" visibility="public" xmi:id="int_id" xmi:type="uml:DataType"/>
+    <ownedMember name="float" visibility="public" xmi:id="float_id" xmi:type="uml:DataType"/>
+    <ownedMember xmi:id="oA36O_iGCkzsbgU9r1r1.1r1" xmi:type="uml:Class" name="the_students">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_table"/>
+      </xmi:Extension>
+    </ownedMember>
+    <ownedMember name="" xmi:id="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.2r2end1"/>
+      <ownedEnd aggregation="none" association="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.2r2" isNavigable="true" name="" type="oA36O_iGCkzsbgU9r1r1.1r1" xmi:id="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.1end2"/>
+      <ownedEnd aggregation="composite" association="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.2r2" isNavigable="true" name="line" type="oA36O_iGCkzsbgU9r1r1.2r2" xmi:id="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.1end2" xmi:type="uml:Property">
+        <lowerValue value="0" xmi:id="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="*" xmi:id="oA36O_iGCkzsbgU9r1r1.1r1oA36O_iGCkzsbgU9r1r1.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="4F36O_iGCkzsbgVVr1r1.1r1" xmi:type="uml:Class" name="the_courses">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_table"/>
+      </xmi:Extension>
+    </ownedMember>
+    <ownedMember name="" xmi:id="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.2r2end1"/>
+      <ownedEnd aggregation="none" association="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.2r2" isNavigable="true" name="" type="4F36O_iGCkzsbgVVr1r1.1r1" xmi:id="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.1end2"/>
+      <ownedEnd aggregation="composite" association="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.2r2" isNavigable="true" name="line" type="4F36O_iGCkzsbgVVr1r1.2r2" xmi:id="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.1end2" xmi:type="uml:Property">
+        <lowerValue value="0" xmi:id="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="*" xmi:id="4F36O_iGCkzsbgVVr1r1.1r14F36O_iGCkzsbgVVr1r1.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="wfP6O_iGCkzsbgVtr2r2.1r1" xmi:type="uml:Class" name="register">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_table"/>
+      </xmi:Extension>
+    </ownedMember>
+    <ownedMember name="" xmi:id="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.2r2end1"/>
+      <ownedEnd aggregation="none" association="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.2r2" isNavigable="true" name="" type="wfP6O_iGCkzsbgVtr2r2.1r1" xmi:id="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.1end2"/>
+      <ownedEnd aggregation="composite" association="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.2r2" isNavigable="true" name="line" type="wfP6O_iGCkzsbgVtr2r2.2r2" xmi:id="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.1end2" xmi:type="uml:Property">
+        <lowerValue value="0" xmi:id="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="*" xmi:id="wfP6O_iGCkzsbgVtr2r2.1r1wfP6O_iGCkzsbgVtr2r2.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="oA36O_iGCkzsbgU9r1r1.2r2" xmi:type="uml:Class" name="Student">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_row"/>
+      </xmi:Extension>
+    </ownedMember>
+    <ownedMember xmi:id="4F36O_iGCkzsbgVVr1r1.2r2" xmi:type="uml:Class" name="Course">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_row"/>
+      </xmi:Extension>
+    </ownedMember>
+    <ownedMember xmi:id="wfP6O_iGCkzsbgVtr2r2.2r2" xmi:type="uml:Class" name="registerCourse">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_row"/>
+      </xmi:Extension>
+    </ownedMember>
+    <ownedMember xmi:id="ADAGO_iGCkzsbgYsr3r3r3" xmi:type="uml:Class" name="id_student">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_column"/>
+      </xmi:Extension>
+      <ownedAttribute xmi:id="ADAGO_iGCkzsbgYsr3r3r3attr1" aggregation="none" name="type" ownerScope="instance" type="int_id" xmi:type="uml:Property"/>
+    </ownedMember>
+    <ownedMember name="" xmi:id="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2end1"/>
+      <ownedEnd aggregation="composite" association="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2" isNavigable="true" name="key" type="ADAGO_iGCkzsbgYsr3r3r3" xmi:id="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2end2"/>
+      <ownedEnd aggregation="none" association="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2" isNavigable="true" name="" type="oA36O_iGCkzsbgU9r1r1.2r2" xmi:id="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2end2" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="ADAGO_iGCkzsbgYsr3r3r3oA36O_iGCkzsbgU9r1r1.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="47sGO_iGCkzsbgfir3r3r3" xmi:type="uml:Class" name="id_course">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_column"/>
+      </xmi:Extension>
+      <ownedAttribute xmi:id="47sGO_iGCkzsbgfir3r3r3attr1" aggregation="none" name="type" ownerScope="instance" type="int_id" xmi:type="uml:Property"/>
+    </ownedMember>
+    <ownedMember name="" xmi:id="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2end1"/>
+      <ownedEnd aggregation="composite" association="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2" isNavigable="true" name="key" type="47sGO_iGCkzsbgfir3r3r3" xmi:id="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2end2"/>
+      <ownedEnd aggregation="none" association="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2" isNavigable="true" name="" type="4F36O_iGCkzsbgVVr1r1.2r2" xmi:id="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2end2" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="47sGO_iGCkzsbgfir3r3r34F36O_iGCkzsbgVVr1r1.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="BOYGO_iGCkzsbgZ1r3r4r4" xmi:type="uml:Class" name="name">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_column"/>
+      </xmi:Extension>
+      <ownedAttribute xmi:id="BOYGO_iGCkzsbgZ1r3r4r4attr1" aggregation="none" name="type" ownerScope="instance" type="String_id" xmi:type="uml:Property"/>
+    </ownedMember>
+    <ownedMember name="" xmi:id="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2end1"/>
+      <ownedEnd aggregation="composite" association="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2" isNavigable="true" name="col" type="BOYGO_iGCkzsbgZ1r3r4r4" xmi:id="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2end2"/>
+      <ownedEnd aggregation="none" association="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2" isNavigable="true" name="" type="oA36O_iGCkzsbgU9r1r1.2r2" xmi:id="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2end2" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="BOYGO_iGCkzsbgZ1r3r4r4oA36O_iGCkzsbgU9r1r1.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="VDkGO_iGCkzsbgbZr3r4r4" xmi:type="uml:Class" name="old">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_column"/>
+      </xmi:Extension>
+      <ownedAttribute xmi:id="VDkGO_iGCkzsbgbZr3r4r4attr1" aggregation="none" name="type" ownerScope="instance" type="int_id" xmi:type="uml:Property"/>
+    </ownedMember>
+    <ownedMember name="" xmi:id="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2end1"/>
+      <ownedEnd aggregation="composite" association="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2" isNavigable="true" name="col" type="VDkGO_iGCkzsbgbZr3r4r4" xmi:id="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2end2"/>
+      <ownedEnd aggregation="none" association="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2" isNavigable="true" name="" type="oA36O_iGCkzsbgU9r1r1.2r2" xmi:id="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2end2" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="VDkGO_iGCkzsbgbZr3r4r4oA36O_iGCkzsbgU9r1r1.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="Y5iGO_iGCkzsbggVr3r4r4" xmi:type="uml:Class" name="title">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_column"/>
+      </xmi:Extension>
+      <ownedAttribute xmi:id="Y5iGO_iGCkzsbggVr3r4r4attr1" aggregation="none" name="type" ownerScope="instance" type="String_id" xmi:type="uml:Property"/>
+    </ownedMember>
+    <ownedMember name="" xmi:id="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2end1"/>
+      <ownedEnd aggregation="composite" association="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2" isNavigable="true" name="col" type="Y5iGO_iGCkzsbggVr3r4r4" xmi:id="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2end2"/>
+      <ownedEnd aggregation="none" association="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2" isNavigable="true" name="" type="4F36O_iGCkzsbgVVr1r1.2r2" xmi:id="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2end2" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="Y5iGO_iGCkzsbggVr3r4r44F36O_iGCkzsbgVVr1r1.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="TcqGO_iGCkzsbgiEr3r4r4" xmi:type="uml:Class" name="credits">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_column"/>
+      </xmi:Extension>
+      <ownedAttribute xmi:id="TcqGO_iGCkzsbgiEr3r4r4attr1" aggregation="none" name="type" ownerScope="instance" type="float_id" xmi:type="uml:Property"/>
+    </ownedMember>
+    <ownedMember name="" xmi:id="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2end1"/>
+      <ownedEnd aggregation="composite" association="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2" isNavigable="true" name="col" type="TcqGO_iGCkzsbgiEr3r4r4" xmi:id="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2end2"/>
+      <ownedEnd aggregation="none" association="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2" isNavigable="true" name="" type="4F36O_iGCkzsbgVVr1r1.2r2" xmi:id="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2end2" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="TcqGO_iGCkzsbgiEr3r4r44F36O_iGCkzsbgVVr1r1.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="AatGO_iGCkzsbhhHr4r5r5" xmi:type="uml:Class" name="registerCourseid_course">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_column"/>
+      </xmi:Extension>
+      <ownedAttribute xmi:id="AatGO_iGCkzsbhhHr4r5r5attr1" aggregation="none" name="type" ownerScope="instance" type="int_id" xmi:type="uml:Property"/>
+    </ownedMember>
+    <ownedMember name="" xmi:id="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2end1"/>
+      <ownedEnd aggregation="composite" association="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2" isNavigable="true" name="foreign" type="AatGO_iGCkzsbhhHr4r5r5" xmi:id="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2end2"/>
+      <ownedEnd aggregation="none" association="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2" isNavigable="true" name="" type="wfP6O_iGCkzsbgVtr2r2.2r2" xmi:id="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2end2" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="AatGO_iGCkzsbhhHr4r5r5wfP6O_iGCkzsbgVtr2r2.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+    <ownedMember xmi:id="CrZGO_iGCkzsbhYYr4r6r5" xmi:type="uml:Class" name="registerCourseid_student">
+      <xmi:Extension xmi:Extender="Visual Paradigm for UML">
+        <appliedStereotype xmi:value="uml_column"/>
+      </xmi:Extension>
+      <ownedAttribute xmi:id="CrZGO_iGCkzsbhYYr4r6r5attr1" aggregation="none" name="type" ownerScope="instance" type="int_id" xmi:type="uml:Property"/>
+    </ownedMember>
+    <ownedMember name="" xmi:id="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2" xmi:type="uml:Association">
+      <memberEnd xmi:idref="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2end1"/>
+      <ownedEnd aggregation="composite" association="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2" isNavigable="true" name="foreign" type="CrZGO_iGCkzsbhYYr4r6r5" xmi:id="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2end1" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2end1lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2end1uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+      <memberEnd xmi:idref="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2end2"/>
+      <ownedEnd aggregation="none" association="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2" isNavigable="true" name="" type="wfP6O_iGCkzsbgVtr2r2.2r2" xmi:id="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2end2" xmi:type="uml:Property">
+        <lowerValue value="1" xmi:id="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2end2lc" xmi:type="uml:LiteralString"/>
+        <upperValue value="1" xmi:id="CrZGO_iGCkzsbhYYr4r6r5wfP6O_iGCkzsbgVtr2r2.2r2end2uc" xmi:type="uml:LiteralString"/>
+      </ownedEnd>
+    </ownedMember>
+  </uml:Model>
+</xmi:XMI>

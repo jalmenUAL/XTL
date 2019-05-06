@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns="http://xtl/mm" xmlns:uml="http://xtl/uml" xmlns:xmi="http://xtl/xmi">
+	<xmi:Documentation xmi:Exporter="Visual Paradigm for UML" xmi:ExporterVersion="6.2.1"/>
+	<uml:Model name="mt" xmi:id="M3N6O_iGCkzsbgOb">
+		<ownedMember isAbstract="false" isActive="false" isLeaf="false" name="DB_Students" visibility="public" xmi:id="L7T6O_iGCkzsbgO0" xmi:type="uml:Class">
+			<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+				<isRoot xmi:value="false"/>
+				<modelType value="Class"/>
+				<businessModel xmi:value="false"/>
+			</xmi:Extension>
+		</ownedMember>
+		<ownedMember isAbstract="false" isActive="false" isLeaf="false" name="DB_Courses" visibility="public" xmi:id="R1L6O_iGCkzsbgQA" xmi:type="uml:Class">
+			<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+				<isRoot xmi:value="false"/>
+				<modelType value="Class"/>
+				<businessModel xmi:value="false"/>
+			</xmi:Extension>
+		</ownedMember>
+		<ownedMember isAbstract="false" isActive="false" isLeaf="false" name="Student" visibility="public" xmi:id="P6b6O_iGCkzsbgRM" xmi:type="uml:Class">
+			<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+				<isRoot xmi:value="false"/>
+				<modelType value="Class"/>
+				<businessModel xmi:value="false"/>
+			</xmi:Extension>
+			<ownedAttribute aggregation="none" name="id_student" ownerScope="instance" type="int_id" xmi:id="ADAGO_iGCkzsbgYs" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<attribute/>
+					<unique xmi:value="true"/>
+					<isVisble xmi:value="true"/>
+				</xmi:Extension>
+			</ownedAttribute>
+			<ownedAttribute aggregation="none" name="name" ownerScope="instance" type="String_id" xmi:id="BOYGO_iGCkzsbgZ1" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<attribute/>
+					<unique xmi:value="false"/>
+					<ordered xmi:value="false"/>
+					<isVisble xmi:value="true"/>
+				</xmi:Extension>
+			</ownedAttribute>
+			<ownedAttribute aggregation="none" name="old" ownerScope="instance" type="int_id" xmi:id="VDkGO_iGCkzsbgbZ" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<attribute/>
+					<unique xmi:value="false"/>
+					<ordered xmi:value="false"/>
+					<isVisble xmi:value="true"/>
+				</xmi:Extension>
+			</ownedAttribute>
+		</ownedMember>
+		<ownedMember isAbstract="false" isActive="false" isLeaf="false" name="Course" visibility="public" xmi:id="v.76O_iGCkzsbgSR" xmi:type="uml:Class">
+			<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+				<isRoot xmi:value="false"/>
+				<modelType value="Class"/>
+				<businessModel xmi:value="false"/>
+			</xmi:Extension>
+			<ownedAttribute aggregation="none" name="id_course" ownerScope="instance" type="int_id" xmi:id="47sGO_iGCkzsbgfi" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<attribute/>
+					<unique xmi:value="true"/>
+					<isVisble xmi:value="true"/>
+				</xmi:Extension>
+			</ownedAttribute>
+			<ownedAttribute aggregation="none" name="title" ownerScope="instance" type="String_id" xmi:id="Y5iGO_iGCkzsbggV" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<attribute/>
+					<unique xmi:value="false"/>
+					<ordered xmi:value="false"/>
+					<isVisble xmi:value="true"/>
+				</xmi:Extension>
+			</ownedAttribute>
+			<ownedAttribute aggregation="none" name="credits" ownerScope="instance" type="float_id" xmi:id="TcqGO_iGCkzsbgiE" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<attribute/>
+					<unique xmi:value="false"/>
+					<ordered xmi:value="false"/>
+					<isVisble xmi:value="true"/>
+				</xmi:Extension>
+			</ownedAttribute>
+		</ownedMember>
+		<ownedMember isAbstract="false" isDerived="false" isLeaf="false" name="" xmi:id="r_X6O_iGCkzsbgU4" xmi:type="uml:Association">
+			<memberEnd xmi:idref="oA36O_iGCkzsbgU6"/>
+			<ownedEnd aggregation="none" association="r_X6O_iGCkzsbgU4" type="L7T6O_iGCkzsbgO0" visibility="private" xmi:id="oA36O_iGCkzsbgU6" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<associationEnd/>
+					<qualifier name="" xmi:id="oA36O_iGCkzsbgU8" xmi:type="qualifier"/>
+				</xmi:Extension>
+				<lowerValue value="1" xmi:id="oA36O_iGCkzsbgU6_multiplicity_lowerValue" xmi:type="uml:LiteralString"/>
+			</ownedEnd>
+			<memberEnd xmi:idref="oA36O_iGCkzsbgU9"/>
+			<ownedEnd aggregation="composite" association="r_X6O_iGCkzsbgU4" isNavigable="true" name="the_students" type="P6b6O_iGCkzsbgRM" visibility="private" xmi:id="oA36O_iGCkzsbgU9" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<associationEnd/>
+					<qualifier name="" xmi:id="oA36O_iGCkzsbgU." xmi:type="qualifier"/>
+				</xmi:Extension>
+				<lowerValue value="0" xmi:id="oA36O_iGCkzsbgU9_multiplicity_lowerValue" xmi:type="uml:LiteralString"/>
+				<upperValue value="*" xmi:id="oA36O_iGCkzsbgU9_multiplicity_upperValue" xmi:type="uml:LiteralString"/>
+			</ownedEnd>
+		</ownedMember>
+		<ownedMember isAbstract="false" isDerived="false" isLeaf="false" name="" xmi:id="4F36O_iGCkzsbgVS" xmi:type="uml:Association">
+			<memberEnd xmi:idref="4F36O_iGCkzsbgVT"/>
+			<ownedEnd aggregation="none" association="4F36O_iGCkzsbgVS" name="" type="R1L6O_iGCkzsbgQA" visibility="private" xmi:id="4F36O_iGCkzsbgVT" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<associationEnd/>
+					<qualifier name="" xmi:id="4F36O_iGCkzsbgVU" xmi:type="qualifier"/>
+				</xmi:Extension>
+				<lowerValue value="1" xmi:id="4F36O_iGCkzsbgVT_multiplicity_lowerValue" xmi:type="uml:LiteralString"/>
+			</ownedEnd>
+			<memberEnd xmi:idref="4F36O_iGCkzsbgVV"/>
+			<ownedEnd aggregation="composite" association="4F36O_iGCkzsbgVS" isNavigable="true" name="the_courses" type="v.76O_iGCkzsbgSR" visibility="private" xmi:id="4F36O_iGCkzsbgVV" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<associationEnd/>
+					<qualifier name="" xmi:id="4F36O_iGCkzsbgVW" xmi:type="qualifier"/>
+				</xmi:Extension>
+				<lowerValue value="0" xmi:id="4F36O_iGCkzsbgVV_multiplicity_lowerValue" xmi:type="uml:LiteralString"/>
+				<upperValue value="*" xmi:id="4F36O_iGCkzsbgVV_multiplicity_upperValue" xmi:type="uml:LiteralString"/>
+			</ownedEnd>
+		</ownedMember>
+		<ownedMember isAbstract="false" isDerived="false" isLeaf="false" name="" xmi:id="wfP6O_iGCkzsbgVq" xmi:type="uml:Association">
+			<memberEnd xmi:idref="wfP6O_iGCkzsbgVr"/>
+			<ownedEnd aggregation="none" association="wfP6O_iGCkzsbgVq" name="is_registered" type="P6b6O_iGCkzsbgRM" visibility="private" xmi:id="wfP6O_iGCkzsbgVr" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<associationEnd/>
+					<qualifier name="" xmi:id="wfP6O_iGCkzsbgVs" xmi:type="qualifier"/>
+				</xmi:Extension>
+				<lowerValue value="1" xmi:id="wfP6O_iGCkzsbgVr_multiplicity_lowerValue" xmi:type="uml:LiteralString"/>
+				<upperValue value="*" xmi:id="wfP6O_iGCkzsbgVr_multiplicity_upperValue" xmi:type="uml:LiteralString"/>
+				<qualifier aggregation="none" name="id_student" ownerScope="instance" type="int_id" xmi:id="CrZGO_iGCkzsbhYY" xmi:type="uml:Property">
+					<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+						<attribute/>
+						<unique xmi:value="true"/>
+						<ordered xmi:value="false"/>
+						<isVisble xmi:value="true"/>
+					</xmi:Extension>
+				</qualifier>
+			</ownedEnd>
+			<memberEnd xmi:idref="wfP6O_iGCkzsbgVt"/>
+			<ownedEnd aggregation="none" association="wfP6O_iGCkzsbgVq" isNavigable="true" name="register" type="v.76O_iGCkzsbgSR" visibility="private" xmi:id="wfP6O_iGCkzsbgVt" xmi:type="uml:Property">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<associationEnd/>
+					<qualifier name="" xmi:id="wfP6O_iGCkzsbgVu" xmi:type="qualifier"/>
+				</xmi:Extension>
+				<lowerValue value="0" xmi:id="wfP6O_iGCkzsbgVt_multiplicity_lowerValue" xmi:type="uml:LiteralString"/>
+				<upperValue value="*" xmi:id="wfP6O_iGCkzsbgVt_multiplicity_upperValue" xmi:type="uml:LiteralString"/>
+				<qualifier aggregation="none" name="id_course" ownerScope="instance" type="int_id" xmi:id="AatGO_iGCkzsbhhH" xmi:type="uml:Property">
+					<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+						<attribute/>
+						<unique xmi:value="true"/>
+						<ordered xmi:value="false"/>
+						<isVisble xmi:value="true"/>
+					</xmi:Extension>
+				</qualifier>
+			</ownedEnd>
+		</ownedMember>
+		<ownedMember name="String" visibility="public" xmi:id="String_id" xmi:type="uml:DataType"/>
+		<ownedMember name="int" visibility="public" xmi:id="int_id" xmi:type="uml:DataType"/>
+		<ownedMember name="float" visibility="public" xmi:id="float_id" xmi:type="uml:DataType"/>
+	</uml:Model>
+	<uml:Diagram diagramType="ClassDiagram" name="model-A" toolName="Visual Paradigm for UML" xmi:id="xld6O_iGCkzsbgOp">
+		<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+			<properties>
+				<ashowPackageNameStyle value="0"/>
+				<ashowActivityStateNodeCaption value="0"/>
+				<aeditable value="true"/>
+				<afollowDiagramParentElement value="true"/>
+				<aautoFitShapesSize value="false"/>
+				<ashowTaggedValues value="false"/>
+				<ashowStereotypes value="true"/>
+				<aalignToGrid value="true"/>
+				<agridVisible value="false"/>
+				<agridWidth value="10"/>
+				<agridHeight value="10"/>
+				<agridColor value="Cr:192,192,192,255"/>
+				<adiagramBackground value="Cr:255,255,255,255"/>
+				<aconnectorStyle value="1"/>
+				<aconnectionPointStyle value="0"/>
+				<azoomRatio value="1.0"/>
+				<amaximized value="false"/>
+				<ax value="0"/>
+				<ay value="0"/>
+				<awidth value="200"/>
+				<aheight value="200"/>
+				<a_globalPaletteOption value="true"/>
+				<a_alwaysShowReferenceAndSubdiagramResource value="false"/>
+				<alocked value="false"/>
+				<ainitializeDiagramForCreate value="true"/>
+				<ashowDefaultPackage value="true"/>
+			</properties>
+		</xmi:Extension>
+		<uml:Diagram.element>
+			<uml:DiagramElement geometry="70,60,90,40" preferredShapeType="Class" subject="L7T6O_iGCkzsbgO0" xmi:id="L7T6O_iGCkzsbgOz">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,90,15"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="30"/>
+						<acreatorDiagramType value="ClassDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+						<adisplayAsRobustnessAnalysisIcon value="true"/>
+						<avisibilityStyle value="1"/>
+						<ashowAttributeType value="1"/>
+						<ashowOperationType value="1"/>
+						<amSwTpPts value="true"/>
+						<ashowOwner value="false"/>
+						<alshRfAts value="true"/>
+						<amShDrAt value="false"/>
+						<akShDrOp value="false"/>
+						<akSwCsMbSt value="false"/>
+						<ashowClassMemberConstraints value="true"/>
+						<alShCmMl value="false"/>
+						<ashowOperationParameterDirection value="false"/>
+						<ashowParameterNameInOperationSignature value="true"/>
+						<ashowOperationTemplateParameters value="false"/>
+						<ashowOperationProperties value="false"/>
+						<awpMbs value="false"/>
+						<aattributeSortType value="0"/>
+						<aoperationSortType value="0"/>
+						<ashowInitialAttributeValue value="true"/>
+						<ashowOperationSignature value="true"/>
+						<ainterfaceBall value="false"/>
+						<ashowTypeOption value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.5"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="450,60,90,40" preferredShapeType="Class" subject="R1L6O_iGCkzsbgQA" xmi:id="R1L6O_iGCkzsbgP_">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,90,15"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="28"/>
+						<acreatorDiagramType value="ClassDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+						<adisplayAsRobustnessAnalysisIcon value="true"/>
+						<avisibilityStyle value="1"/>
+						<ashowAttributeType value="1"/>
+						<ashowOperationType value="1"/>
+						<amSwTpPts value="true"/>
+						<ashowOwner value="false"/>
+						<alshRfAts value="true"/>
+						<amShDrAt value="false"/>
+						<akShDrOp value="false"/>
+						<akSwCsMbSt value="false"/>
+						<ashowClassMemberConstraints value="true"/>
+						<alShCmMl value="false"/>
+						<ashowOperationParameterDirection value="false"/>
+						<ashowParameterNameInOperationSignature value="true"/>
+						<ashowOperationTemplateParameters value="false"/>
+						<ashowOperationProperties value="false"/>
+						<awpMbs value="false"/>
+						<aattributeSortType value="0"/>
+						<aoperationSortType value="0"/>
+						<ashowInitialAttributeValue value="true"/>
+						<ashowOperationSignature value="true"/>
+						<ainterfaceBall value="false"/>
+						<ashowTypeOption value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.5"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="70,170,90,70" preferredShapeType="Class" subject="P6b6O_iGCkzsbgRM" xmi:id="P6b6O_iGCkzsbgRL">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,90,15"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="26"/>
+						<acreatorDiagramType value="ClassDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+						<adisplayAsRobustnessAnalysisIcon value="true"/>
+						<avisibilityStyle value="1"/>
+						<ashowAttributeType value="1"/>
+						<ashowOperationType value="1"/>
+						<amSwTpPts value="true"/>
+						<ashowOwner value="false"/>
+						<alshRfAts value="true"/>
+						<amShDrAt value="false"/>
+						<akShDrOp value="false"/>
+						<akSwCsMbSt value="false"/>
+						<ashowClassMemberConstraints value="true"/>
+						<alShCmMl value="false"/>
+						<ashowOperationParameterDirection value="false"/>
+						<ashowParameterNameInOperationSignature value="true"/>
+						<ashowOperationTemplateParameters value="false"/>
+						<ashowOperationProperties value="false"/>
+						<awpMbs value="false"/>
+						<aattributeSortType value="0"/>
+						<aoperationSortType value="0"/>
+						<ashowInitialAttributeValue value="true"/>
+						<ashowOperationSignature value="true"/>
+						<ainterfaceBall value="false"/>
+						<ashowTypeOption value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.5"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="160,200,88,20" preferredShapeType="Qualifier" subject="wfP6O_iGCkzsbgVs" xmi:id="TcVGO_iGCkzsbhYq">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="50,150,100,20"/>
+					<captionVisible value="false"/>
+					<captionSide value="7"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="14"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+					</properties>
+					<parentDiagramElement idref="P6b6O_iGCkzsbgRL"/>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.5"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="450,170,90,70" preferredShapeType="Class" subject="v.76O_iGCkzsbgSR" xmi:id="v.76O_iGCkzsbgSQ">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="0,0,90,15"/>
+					<captionVisible value="true"/>
+					<captionSide value="12"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="24"/>
+						<acreatorDiagramType value="ClassDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+						<adisplayAsRobustnessAnalysisIcon value="true"/>
+						<avisibilityStyle value="1"/>
+						<ashowAttributeType value="1"/>
+						<ashowOperationType value="1"/>
+						<amSwTpPts value="true"/>
+						<ashowOwner value="false"/>
+						<alshRfAts value="true"/>
+						<amShDrAt value="false"/>
+						<akShDrOp value="false"/>
+						<akSwCsMbSt value="false"/>
+						<ashowClassMemberConstraints value="true"/>
+						<alShCmMl value="false"/>
+						<ashowOperationParameterDirection value="false"/>
+						<ashowParameterNameInOperationSignature value="true"/>
+						<ashowOperationTemplateParameters value="false"/>
+						<ashowOperationProperties value="false"/>
+						<awpMbs value="false"/>
+						<aattributeSortType value="0"/>
+						<aoperationSortType value="0"/>
+						<ashowInitialAttributeValue value="true"/>
+						<ashowOperationSignature value="true"/>
+						<ainterfaceBall value="false"/>
+						<ashowTypeOption value="0"/>
+					</properties>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.5"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="365,199,85,20" preferredShapeType="Qualifier" subject="wfP6O_iGCkzsbgVu" xmi:id="S9DGO_iGCkzsbhhZ">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="390,150,100,20"/>
+					<captionVisible value="false"/>
+					<captionSide value="7"/>
+					<properties>
+						<abackground value="Cr:255,255,255,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="12"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<adisplayStereotypeIcon value="false"/>
+						<aparentConnectorHeaderLength value="40"/>
+						<aparentConnectorLineLength value="10"/>
+						<aconnectToPoint value="true"/>
+						<aparentConnectorDTheta value="0.0"/>
+						<aconnectionPointType value="2"/>
+						<arequestDefaultSize value="false"/>
+						<arequestFitSize value="false"/>
+						<arequestFitSizeFromCenter value="false"/>
+					</properties>
+					<parentDiagramElement idref="v.76O_iGCkzsbgSQ"/>
+				</xmi:Extension>
+				<elementFill color1="Cr:255,255,255,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.5"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="110,100;110,169;" preferredShapeType="Association" subject="r_X6O_iGCkzsbgU4" xmi:id="KA36O_iGCkzsbgU_">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="120,154,20,0"/>
+					<captionVisible value="true"/>
+					<captionSide value="1"/>
+					<roleA multiplicity="110,100,40,20"/>
+					<roleB multiplicity="70,140,40,20" roleName="110,140,80,20"/>
+					<properties>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="-1"/>
+						<acreatorDiagramType value="ClassDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<aconnectorStyle value="3"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<ahasRoleAShape value="false"/>
+						<ahasRoleBShape value="true"/>
+						<ashowMultiplicityConstraints value="false"/>
+						<aroleBRectangle value="Re:110.0,140.0,80.0,20.0"/>
+						<amultiplicityBRectangle value="Re:70.0,140.0,40.0,20.0"/>
+						<amultiplicityARectangle value="Re:110.0,100.0,40.0,20.0"/>
+						<ahasMultiplicityAShape value="true"/>
+						<ahasMultiplicityBShape value="true"/>
+						<a0SwDr value="false"/>
+						<ashowName value="true"/>
+						<ashowStereotypes value="true"/>
+						<ashowFromRoleName value="true"/>
+						<ashowToRoleName value="true"/>
+						<ashowFromMultiplicity value="true"/>
+						<ashowToMultiplicity value="true"/>
+						<ashowFromRoleVisibility value="false"/>
+						<ashowToRoleVisibility value="false"/>
+						<ashowAssociationEndPropertyStrings value="false"/>
+						<ahasAssociationEndPropertyStringsAShape value="false"/>
+						<ahasAssociationEndPropertyStringsBShape value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="490,100;490,169;" preferredShapeType="Association" subject="4F36O_iGCkzsbgVS" xmi:id="4F36O_iGCkzsbgVX">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="500,154,20,0"/>
+					<captionVisible value="true"/>
+					<captionSide value="1"/>
+					<roleA multiplicity="490,100,40,20"/>
+					<roleB multiplicity="500,150,40,20" roleName="420,150,70,20"/>
+					<properties>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="-1"/>
+						<acreatorDiagramType value="ClassDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<aconnectorStyle value="3"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<ahasRoleAShape value="false"/>
+						<ahasRoleBShape value="true"/>
+						<ashowMultiplicityConstraints value="false"/>
+						<aroleBRectangle value="Re:420.0,150.0,70.0,20.0"/>
+						<amultiplicityBRectangle value="Re:500.0,150.0,40.0,20.0"/>
+						<amultiplicityARectangle value="Re:490.0,100.0,40.0,20.0"/>
+						<ahasMultiplicityAShape value="true"/>
+						<ahasMultiplicityBShape value="true"/>
+						<a0SwDr value="false"/>
+						<ashowName value="true"/>
+						<ashowStereotypes value="true"/>
+						<ashowFromRoleName value="true"/>
+						<ashowToRoleName value="true"/>
+						<ashowFromMultiplicity value="true"/>
+						<ashowToMultiplicity value="true"/>
+						<ashowFromRoleVisibility value="false"/>
+						<ashowToRoleVisibility value="false"/>
+						<ashowAssociationEndPropertyStrings value="false"/>
+						<ahasAssociationEndPropertyStringsAShape value="false"/>
+						<ahasAssociationEndPropertyStringsBShape value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="248,210;364,210;" preferredShapeType="Association" subject="wfP6O_iGCkzsbgVq" xmi:id="wfP6O_iGCkzsbgVv">
+				<xmi:Extension xmi:Extender="Visual Paradigm for UML">
+					<captionBounds value="316,230,20,0"/>
+					<captionVisible value="true"/>
+					<captionSide value="1"/>
+					<roleA multiplicity="250,210,40,20" roleName="250,190,80,20"/>
+					<roleB multiplicity="330,190,40,20" roleName="320,210,50,20"/>
+					<properties>
+						<abackground value="Cr:122,207,245,255"/>
+						<aforeground value="Cr:0,0,0,255"/>
+						<azOrder value="-1"/>
+						<acreatorDiagramType value="ClassDiagram"/>
+						<aselectable value="true"/>
+						<arequestResetCaption value="false"/>
+						<arequestResetCaptionSize value="false"/>
+						<aconnectorStyle value="3"/>
+						<afromShapeXDiff value="0"/>
+						<afromShapeYDiff value="0"/>
+						<atoShapeXDiff value="0"/>
+						<atoShapeYDiff value="0"/>
+						<afromConnectType value="0"/>
+						<atoConnectType value="0"/>
+						<auseFromShapeCenter value="true"/>
+						<auseToShapeCenter value="true"/>
+						<afromPinType value="1"/>
+						<atoPinType value="1"/>
+						<ahasRoleAShape value="true"/>
+						<ahasRoleBShape value="true"/>
+						<ashowMultiplicityConstraints value="false"/>
+						<aroleARectangle value="Re:250.0,190.0,80.0,20.0"/>
+						<aroleBRectangle value="Re:320.0,210.0,50.0,20.0"/>
+						<amultiplicityBRectangle value="Re:330.0,190.0,40.0,20.0"/>
+						<amultiplicityARectangle value="Re:250.0,210.0,40.0,20.0"/>
+						<ahasMultiplicityAShape value="true"/>
+						<ahasMultiplicityBShape value="true"/>
+						<a0SwDr value="false"/>
+						<ashowName value="true"/>
+						<ashowStereotypes value="true"/>
+						<ashowFromRoleName value="true"/>
+						<ashowToRoleName value="true"/>
+						<ashowFromMultiplicity value="true"/>
+						<ashowToMultiplicity value="true"/>
+						<ashowFromRoleVisibility value="false"/>
+						<ashowToRoleVisibility value="false"/>
+						<ashowAssociationEndPropertyStrings value="false"/>
+						<ahasAssociationEndPropertyStringsAShape value="false"/>
+						<ahasAssociationEndPropertyStringsBShape value="false"/>
+					</properties>
+				</xmi:Extension>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+		</uml:Diagram.element>
+	</uml:Diagram>
+</xmi:XMI>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema 
+	targetNamespace="http://xtl/xmi" 
+	xmlns="http://xtl/xmi"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:mm="http://xtl/mm" 
+	xmlns:uml="http://xtl/uml">
+	<xs:import namespace="http://xtl/mm" schemaLocation="mm.xsd"/>
+	<xs:import namespace="http://xtl/uml" schemaLocation="uml.xsd"/>
+	<xs:element name="Extension">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="mm:unique" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="mm:qualifier" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="mm:appliedStereotype" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="mm:ordered" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="mm:isVisble" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="mm:attribute" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="mm:isRoot" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="mm:modelType" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="mm:businessModel" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="mm:associationEnd" minOccurs="0" maxOccurs="1">
+				</xs:element>
+			</xs:choice>
+			<xs:attribute form="qualified" name="Extender" type="xs:string" use="optional">
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="IDREF_Item">
+		<xs:attribute form="qualified" name="idref" type="xs:IDREF" use="optional">
+		</xs:attribute>
+	</xs:complexType>
+	<xs:element name="XMI">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="uml:Model" minOccurs="0" maxOccurs="1">
+				</xs:element>
+				<xs:element ref="Documentation" minOccurs="0" maxOccurs="1">
+				</xs:element>
+			</xs:choice>
+			<xs:attribute form="qualified" name="version" type="xs:string" use="optional">
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Documentation">
+		<xs:complexType>
+			<xs:attribute form="qualified" name="Exporter" type="xs:string" use="optional">
+			</xs:attribute>
+			<xs:attribute form="qualified" name="ExporterVersion" type="xs:string" use="optional">
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="XMI_Item">
+		<xs:attribute form="qualified" name="id" type="xs:ID" use="optional">
+		</xs:attribute>
+		<xs:attribute form="qualified" name="value" type="xs:string" use="optional">
+		</xs:attribute>
+		<xs:attribute form="qualified" name="type" type="xs:QName" use="optional">
+		</xs:attribute>
+	</xs:complexType>
+</xs:schema>

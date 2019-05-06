@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema 
+	targetNamespace="http://xtl/mmA" 
+	xmlns="http://xtl/mmA"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xmi="http://xtl/xmi">
+	<xs:import namespace="http://xtl/xmi" schemaLocation="xmi.xsd"/>
+	<xs:element name="store">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="data" minOccurs="1" maxOccurs="1">
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="meta_model_A">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="relation" minOccurs="0" maxOccurs="unbounded">
+				</xs:element>
+				<xs:element ref="store" minOccurs="0" maxOccurs="unbounded">
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="relation">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="role" minOccurs="0" maxOccurs="unbounded">
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="role">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="role_qualifier" minOccurs="0" maxOccurs="unbounded">
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="navigable" type="xs:boolean" use="optional">
+					</xs:attribute>
+					<xs:attribute name="min" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="max" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="data" type="xs:IDREF" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="role_qualifier">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="type" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="data">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="data_attribute" minOccurs="0" maxOccurs="unbounded">
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="container" type="xs:string" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="data_attribute">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="xmi:XMI_Item">
+					<xs:attribute name="name" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="type" type="xs:string" use="optional">
+					</xs:attribute>
+					<xs:attribute name="key" type="xs:boolean" use="optional">
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
